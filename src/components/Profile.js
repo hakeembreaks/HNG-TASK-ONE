@@ -10,6 +10,7 @@ export default function Profile() {
   }); // This variable stores the current day of the week, like "Monday" or "Tuesday." It uses JavaScript's toLocaleDateString method to get this information.
   const currentUTCTime = new Date().getTime(); // This variable stores the current UTC time in milliseconds. It uses JavaScript's getTime method on a Date object to get this value.
   const myTrack = "Frontend";
+  const githubURL = "https://github.com/hakeembreaks/HNG-TASK-ONE";
 
   return (
     <div className="profile-container">
@@ -23,6 +24,15 @@ export default function Profile() {
       <div data-testid="currentDayOfTheWeek">{currentDayOfTheWeek}</div>
       <div data-testid="currentUTCTime">{currentUTCTime}</div>
       <div data-testid="myTrack">{myTrack}</div>
+      <a
+        className="github-link"
+        data-testid="githubURL"
+        href={githubURL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub Repository
+      </a>
     </div>
   );
 }

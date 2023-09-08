@@ -5,10 +5,15 @@
     border: 2px solid gray;
    
   }
-  
   .profile-image {
    max-width: 200px;
    border-radius: 50%;
    margin: 20px auto;
+  }
+
+  .github-link{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
   }
   
